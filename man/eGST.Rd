@@ -13,7 +13,7 @@ contains the GWAS phenotype values of individuals. No default.}
 
 \item{geno}{A list with K elements where K is the number of tissues. Each element of
 geno is the genotype matrix of the eQTLs specific to a tissue in the GWAS cohort. So j-th element of geno is N by Mj matrix
-containing the genotype data of N individuals (rows) at Mj eQTLs (coulmns) specific to j-th tissue.
+containing the genotype data of N individuals (rows) at Mj eQTLs (columns) specific to j-th tissue.
 Each eQTL is a bi-allelic SNP with minor allele frequency > 0.01.
 Genotypes at each eQTL should be normalized across N individuals.
 If 0/1/2 valued genotype matrix is provided, it is internally normalized. No default.}
@@ -21,8 +21,8 @@ If 0/1/2 valued genotype matrix is provided, it is internally normalized. No def
 \item{tissues}{A character vector of length K. It contains the names of tissues of interest in subtyping.
 The order of tissues in this vector must match the order of tissues in the previous argument 'geno'. No default.}
 
-\item{logLimprovement}{A positive real number specifying the minimum possible improvent
-of data log-likelihood in MAP-EM stopping criterion. Default 10^(-8).}
+\item{logLimprovement}{A positive real number specifying the minimum possible improvement
+of data log-likelihood in MAP-EM stopping criterion. Default \eqn{10^(-8)}.}
 
 \item{seed_choice}{An integer providing the choice of random seed for initialization in MAP-EM algorithm. Default is
 an integer randomly selected in (1,...,1000).}
@@ -57,6 +57,6 @@ str(result)
 
 }
 \references{
-Majumdar A, Giambartolomei C, Cai N, Haldar T, Freund MK, Pasaniuc B (2019) Leveraging eQTLs to identify
+Majumdar A, Giambartolomei C, Cai N, Freund MK, Haldar T, J Flint, Pasaniuc B (2019) Leveraging eQTLs to identify
 tissue-specific genetic subtype of complex trait. bioRxiv.
 }

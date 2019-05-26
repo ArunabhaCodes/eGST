@@ -2,7 +2,7 @@ Package: eGST
 Title: EQTL Based Genetic Sub Typer: A Statistical Method to Identify Tissue Specific Genetic Subtypes of Complex Trait
 Version: 1.0.0
 Date: 2019-05-26
-Authors@R: c(person("Arunabha", "Majumdar", email = "statgen.arunabha@gmail.com", role = c("aut", "cre")), person("Bogdan", "Pasaniuc", email = "pasaniuc@ucla.edu", role = "aut"), person("Tanushree", "Haldar", email = "tanushree.haldar@gmail.com", role = "aut"))
+Authors@R: c(person("Arunabha", "Majumdar", email = "statgen.arunabha@gmail.com", role = c("aut", "cre")), person("Tanushree", "Haldar", email = "tanushree.haldar@gmail.com", role = "aut"), person("Bogdan", "Pasaniuc", email = "pasaniuc@ucla.edu", role = "aut"))
 Description: If multiple tissue or cell-type specific biological 
     pathways underlie a phenotype, it can be possible to identify 
     the subtype of the phenotype which is defined by heterogeneous 

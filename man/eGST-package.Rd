@@ -30,7 +30,7 @@ the estimated subtype posterior probability across individuals.}}
 }
 
 \references{
-Majumdar A, Giambartolomei C, Cai N, Haldar T, Freund MK, Pasaniuc B (2019) Leveraging eQTLs to identify
+Majumdar A, Giambartolomei C, Cai N, Freund MK, Haldar T, J Flint, Pasaniuc B (2019) Leveraging eQTLs to identify
 tissue-specific genetic subtype of complex trait. bioRxiv.
 }
 \seealso{
@@ -46,8 +46,8 @@ Useful links:
 
 Authors:
 \itemize{
-  \item Bogdan Pasaniuc \email{pasaniuc@ucla.edu}
   \item Tanushree Haldar \email{tanushree.haldar@gmail.com}
+  \item Bogdan Pasaniuc \email{pasaniuc@ucla.edu}
 }
 
 }

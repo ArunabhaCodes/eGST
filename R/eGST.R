@@ -25,7 +25,7 @@
 #' \item{\code{\link{eGST}}}{It estimates the posterior probability that an individual's phenotype is a tissue-specific
 #' genetic subtype. The phenotype across individuals can be classified as tissue-specific genetic subtype based on
 #' the estimated subtype posterior probability across individuals.}}
-#' @references Majumdar A, Giambartolomei C, Cai N, Haldar T, Freund MK, Pasaniuc B (2019) Leveraging eQTLs to identify
+#' @references Majumdar A, Giambartolomei C, Cai N, Freund MK, Haldar T, J Flint, Pasaniuc B (2019) Leveraging eQTLs to identify
 #' tissue-specific genetic subtype of complex trait. bioRxiv.
 #'
 #' @docType package

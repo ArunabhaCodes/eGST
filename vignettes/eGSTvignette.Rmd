@@ -90,4 +90,4 @@ probability is > 65\% can be assigned as first tissue-specific
 genetic subtype. The list 'result' contains other 
 outputs from eGST. For more details, please see the 'Value' section in eGST manual.
 
-For any questions, please send an email to statgen.arunabha@gmail.com or pasaniuc@ucla.edu. See our manuscript for more details: Majumdar A, Giambartolomei C, Cai N, Haldar T, Freund MK, Pasaniuc B (2019) Leveraging eQTLs to identify tissue-specific genetic subtype of complex trait. bioRxiv.
+For any questions, please send an email to statgen.arunabha@gmail.com or pasaniuc@ucla.edu. See our manuscript for more details: Majumdar A, Giambartolomei C, Cai N, Freund MK, Haldar T, J Flint, Pasaniuc B (2019) Leveraging eQTLs to identify tissue-specific genetic subtype of complex trait. bioRxiv.
