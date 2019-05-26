@@ -18,7 +18,7 @@
 #'
 #' @aliases eGST-package
 #'
-#' \code{\link{eGST}}
+# \code{\link{eGST-package}}
 #'
 #' @section Functions:
 #' \describe{

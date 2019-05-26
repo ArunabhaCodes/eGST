@@ -4,7 +4,6 @@
 \name{eGST-package}
 \alias{eGST-package}
 \alias{_PACKAGE}
-\alias{\code{\link{eGST}}}
 \title{eGST (eQTL-based Genetic Sub-Typer): A statistical method to identify tissue-specific
 genetic subtypes of complex trait.}
 \description{
@@ -47,6 +46,7 @@ Useful links:
 
 Authors:
 \itemize{
+  \item Bogdan Pasaniuc \email{pasaniuc@ucla.edu}
   \item Tanushree Haldar \email{tanushree.haldar@gmail.com}
 }
 
