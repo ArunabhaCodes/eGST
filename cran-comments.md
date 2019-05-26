@@ -4,11 +4,11 @@
 * win-builder (development (2019-05-25) and release (3.6.0))
 
 ## R CMD check results
-We found 0 error and 0 warning in all platform. We also found 0 note while checking on Linux.
+We found 0 error and 0 warning while checking on all platforms. We also found 0 note while checking on Linux.
 
 There is 1 note on local mac and in the result of build_win(). Note is regarding:
 * This is a new package.
-* Maintainer:  Arunabha Majumdar <statgen.arunabha@gmail.com>?. We confirm that Arunabha Majumdar is maintainer of the package  and the email id is correct.
+* Maintainer:  Arunabha Majumdar <statgen.arunabha@gmail.com>. We confirm that Arunabha Majumdar is maintainer of the package  and the email id is correct.
 * The possible misspelling in the 'DESCRIPTION' file. Words listed here are: 'BMI', 'EQTL', 'Subtypes', 'Typer', 'eGST', 'eQTLs', 'posteriori', 'subtype', 'versa'. We confirm that these words are correctly spelled.
 
 
