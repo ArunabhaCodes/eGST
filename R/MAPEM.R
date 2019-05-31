@@ -8,8 +8,8 @@ MAPEM = function(Y, X, tissues, nTissues, logLimprovement, seed_choice, REPLI){
 
   #source("MAPEM_functions.R")               #### Source the core MAP-EM functions
 
-  print("-------MAPEM in eGST starting--------")
-  print(Sys.time())
+  message("-------MAPEM in eGST starting--------")
+  message(Sys.time())
 
   set.seed(seed_choice)
 
@@ -58,7 +58,7 @@ MAPEM = function(Y, X, tissues, nTissues, logLimprovement, seed_choice, REPLI){
   while(improvement > logL_epsilon && repli < REPLI){
 
     repli = repli+1
-    print(paste0("Iteration ", repli, ":"))
+    message(paste0("Iteration ", repli, ":"))
 
     ##============== E-step ================##
 
@@ -88,15 +88,15 @@ MAPEM = function(Y, X, tissues, nTissues, logLimprovement, seed_choice, REPLI){
     if(repli == 1) improvement = 10
     old_logL = new_logL
 
-    print( paste0("logL improvement:", improvement) )
+    message( "logL improvement:", improvement )
 
   }   ## End of EM loop
 
   colnames(gamma) = tissues             ### assigning tissue names.
   results = list(gamma=gamma, alfa=alfa, beta=beta, sigma_g = sigma_g, sigma_e=sigma_e, m = m, logL=new_logL)
 
-  print(Sys.time())
-  print("-------MAPEM finished--------")
+  message(Sys.time())
+  message("-------MAPEM finished--------")
 
   return(results)
 

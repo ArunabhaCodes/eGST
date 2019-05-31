@@ -6,9 +6,9 @@
 #'sets of 100 tissue-specific eQTLs each.
 #'First half of 1000 individuals' phenotypes were simulated to have genetic effect from the first tissue
 #'specific eQTLs, but no effect from the second tissue-specific eQTLs. Hence first 500 individuals
-#'were assigned as the first tissue-specific genetic subtype. Similarly, second half of
+#'were assigned to the first tissue. Similarly, second half of
 #'the 1000 individuals were simulated to have genetic effect from the second-tissue specific eQTLs and hence
-#'they are second tissue-specific genetic subtype.
+#'they were assigned to the second tissue.
 #'
 #'@usage data(ExamplePhenoData)
 #'

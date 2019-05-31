@@ -4,7 +4,7 @@
 \alias{eGST}
 \title{Run eGST.}
 \usage{
-eGST(pheno, geno, tissues, logLimprovement = 10^(-8),
+eGST(pheno, geno, tissues, logLimprovement = 5 * 10^(-8),
   seed_choice = sample(1:1000, size = 1), nIter = 100)
 }
 \arguments{
@@ -12,36 +12,42 @@ eGST(pheno, geno, tissues, logLimprovement = 10^(-8),
 contains the GWAS phenotype values of individuals. No default.}
 
 \item{geno}{A list with K elements where K is the number of tissues. Each element of
-geno is the genotype matrix of the eQTLs specific to a tissue in the GWAS cohort. So j-th element of geno is N by Mj matrix
+geno is the genotype matrix of the eQTLs specific to a tissue in the GWAS cohort.
+So j-th element of geno is N by Mj matrix
 containing the genotype data of N individuals (rows) at Mj eQTLs (columns) specific to j-th tissue.
 Each eQTL is a bi-allelic SNP with minor allele frequency > 0.01.
-Genotypes at each eQTL should be normalized across N individuals.
+Genotypes at each eQTL must be normalized across N individuals.
 If 0/1/2 valued genotype matrix is provided, it is internally normalized. No default.}
 
-\item{tissues}{A character vector of length K. It contains the names of tissues of interest in subtyping.
+\item{tissues}{A character vector of length K. It contains the names of tissues of interest in the analysis.
 The order of tissues in this vector must match the order of tissues in the previous argument 'geno'. No default.}
 
 \item{logLimprovement}{A positive real number specifying the minimum possible improvement
-of data log-likelihood in MAP-EM stopping criterion. Default \eqn{10^(-8)}.}
+of data log-likelihood in MAP-EM stopping criterion. Default \eqn{5*10^(-8)}.}
 
-\item{seed_choice}{An integer providing the choice of random seed for initialization in MAP-EM algorithm. Default is
-an integer randomly selected in (1,...,1000).}
+\item{seed_choice}{An integer providing the choice of random seed for initialization in MAP-EM algorithm.
+Default is an integer randomly selected in (1,...,1000).}
 
 \item{nIter}{An integer providing the maximum number of iterations allowed in the MAP-EM algorithm. Default is 100.}
 }
 \value{
 The output produced by \code{\link{eGST}} is a list which consists of various components.
-\item{gamma}{A N by K matrix providing the tissue-specific subtype posterior probability of N individuals across K tissues.}
-\item{alfa}{Tissue-specific intercepts/means of the trait.}
+\item{gamma}{A N by K matrix providing the tissue-specific posterior probability of N individuals across K tissues.}
+\item{alfa}{Baseline tissue-specific intercepts/means of the trait.}
 \item{beta}{Tissue-specific eQTLs' genetic effect on the trait.}
-\item{sigma_g}{Square root of variance of tissue-specific per-eQTL genetic effect on the trait.}
-\item{sigma_e}{Square root of error variance of tissue-specific subtype of the trait
+\item{sigma_g}{Square root of the variance of tissue-specific per-eQTL genetic effect on the trait.}
+\item{sigma_e}{Square root of the error variance of tissue-specific subtype of the trait
 which remains unexplained by the tissue-specific eQTLs.}
 \item{m}{Number of tissue-specific eQTLs.}
 \item{logL}{log-likelihood of the data.}
 }
 \description{
-Run eGST to estimate the posterior probability that an individual's phenotype is a tissue-specific genetic subtype.
+Run eGST to estimate the posterior probability that the genetic
+susceptibility of the phenotype of
+an individual in the study is mediated through eQTLs specific to a tissue of interest.
+To create sets of tissue-specific eQTLs in your context, please see our manuscript:
+Majumdar A, Giambartolomei C, Cai N, Freund MK, Haldar T, J Flint, Pasaniuc B (2019)
+Leveraging eQTLs to identify tissue-specific genetic subtype of complex trait, bioRxiv.
 }
 \examples{
 data(ExamplePhenoData)
