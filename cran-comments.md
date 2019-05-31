@@ -1,9 +1,10 @@
 ## Resubmission
 This is a resubmission. In this version we have:
 * Explained acronyms in the description text.
-* Reference will be available within next two weeks in bioRxiv. It will be included in next version update of the package.
-* install.packages call in the vignette has been commented out.
-* print() calls have been replaced with message() call.
+* Commented out "install.packages" call in the vignette.
+* Replaced print() calls with message() calls.
+
+Reference will be available within next two weeks in bioRxiv. It will be included in the description in next version update of the package.
 
 ## Test environments
 * local OS High Sierra, R 3.4.3
