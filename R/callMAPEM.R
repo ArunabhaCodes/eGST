@@ -33,7 +33,7 @@
 #'    \item{m}{Number of tissue-specific eQTLs.}
 #'    \item{logL}{log-likelihood of the data.}
 #'
-#' @references Majumdar A, Giambartolomei C, Cai N, Freund MK, Haldar T, J Flint, Pasaniuc B (2019) Leveraging eQTLs to identify
+#' @references A Majumdar, C Giambartolomei, N Cai, MK Freund, T Haldar, T Schwarz, J Flint, B Pasaniuc (2019) Leveraging eQTLs to identify
 #' tissue-specific genetic subtype of complex trait. bioRxiv.
 #'
 #'

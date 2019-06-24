@@ -63,6 +63,6 @@ str(result)
 
 }
 \references{
-Majumdar A, Giambartolomei C, Cai N, Freund MK, Haldar T, J Flint, Pasaniuc B (2019) Leveraging eQTLs to identify
+A Majumdar, C Giambartolomei, N Cai, MK Freund, T Haldar, T Schwarz, J Flint, B Pasaniuc (2019) Leveraging eQTLs to identify
 tissue-specific genetic subtype of complex trait. bioRxiv.
 }

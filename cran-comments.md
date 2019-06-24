@@ -1,10 +1,9 @@
 ## Resubmission
 This is a resubmission. In this version we have:
-* Explained acronyms in the description text.
+* Added reference in the Description field of the DESCRIPTION file in the form authors (year) <doi:...>
+* Explained all the acronyms in the description text (eGST, GWAS etc.)
 * Commented out "install.packages" call in the vignette.
 * Replaced print() calls with message() calls.
-
-Reference will be available within next two weeks in bioRxiv. It will be included in the description in next version update of the package.
 
 ## Test environments
 * local OS High Sierra, R 3.4.3
