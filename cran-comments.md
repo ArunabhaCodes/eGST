@@ -1,5 +1,6 @@
 ## Resubmission
 This is a resubmission. In this version we have:
+* Rectified "EQTLs" as "eQTLs" in the title.
 * Added reference in the Description field of the DESCRIPTION file in the form authors (year) <doi:...>
 * Explained all the acronyms in the description text (eGST, GWAS etc.)
 * Commented out "install.packages" call in the vignette.
